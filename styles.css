@@ -1,3 +1,7 @@
+:root {
+    --color-tan: #E3CDB1;
+}
+
 .wrapper {
     text-align: center;
 }
@@ -30,8 +34,8 @@ nav {
 }
 
 .content-overlay .subtitle {
-    font-size: 18px;
-    color: #c9a27c;
+    font-size: 24px;
+    color: var(--color-tan);
 }
 
 .content-overlay h1 {
@@ -62,6 +66,18 @@ footer {
     text-align: center;
 }
 
+footer p {
+    padding-top: 3rem;
+    margin-bottom: 0px;
+    color: var(--color-tan);
+}
+
+footer h2 {
+    margin-top: 0px;
+    padding-bottom: 1rem;
+}
+
+
 .subscribe {
     background-color: black;
     color: white;
@@ -82,6 +98,23 @@ footer {
     text-align: center;
 }
 
+.email {
+    text-align: left;
+}
+
+.socials p {
+    color: black;
+    font-size: 18px;
+}
+
+.socials .socials-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
 button {
     border: 2px solid #c9a27c;
     background-color: transparent;
@@ -90,6 +123,7 @@ button {
     padding: 10px 60px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-bottom: 3rem;
 }
 
 .button {
@@ -99,6 +133,8 @@ button {
 .div-button {
     text-align: center;
     background-color: #F6F6F6;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     
 }
 
@@ -106,6 +142,54 @@ button {
     text-align: left;
 }
 
+.card h3 {
+    font-size: 24px
+}
+
+.card-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card-content p {
+    font-size: 22px;
+    color: var(--color-tan);
+}
+
+.book {
+    background: linear-gradient(to bottom, #E3CDB1 70%, #ffffff 30%);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.book-button {
+    margin-bottom: 3rem;
+}
+
+
 .book .card {
     text-align: center;
+}
+
+.book h2 {
+    font-size: 32px;
+}
+
+.book p {
+    font-size: 24px;
+}
+
+
+.inline-bold {
+    font-weight: bold;
+}
+
+.tan {
+    color: var(--color-tan);
+}
+
+.heading {
+    font-size: 28px;
+    opacity: 50%;
 }
