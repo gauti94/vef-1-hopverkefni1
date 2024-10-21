@@ -215,15 +215,50 @@ button {
         
     }
 
+
     .extra-cards {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
     }
+
+    .book {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .book .card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .book-card-left {
+        width: 50%;
+    }
+
+    .book-card-right {
+        width: 50%;
+    }
+
+    .book-card-right img {
+        width: 100%;
+        height: auto;
+        max-width: 450px;
+    }
+
+    .recipe-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+  
     .latest-recipes-section {
         display: flex;
         flex-direction: column;
         
         
     }
+
 }
