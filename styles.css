@@ -158,6 +158,7 @@ footer h2 {
 .subscribe {
   background-color: black;
   color: white;
+  justify-content: left;
 }
 
 .subscribe input[type="email"] {
@@ -173,6 +174,7 @@ footer h2 {
   margin: 0 auto 20px auto;
   display: block;
   text-align: left;
+  font-weight: bold;
 }
 
 .email {
@@ -306,6 +308,7 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
   }
 
   .extra-cards {
@@ -343,6 +346,7 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
   }
 
   .latest-recipes-section {
