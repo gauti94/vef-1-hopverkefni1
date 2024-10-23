@@ -19,19 +19,34 @@ function checkScreenSize2() {
 }
 
 function checkScreenSize3() {
-    const textElement = document.getElementById("want-some-action");
-    if (window.innerWidth >= 800) {
+  const textElement = document.getElementById("want-some-action");
+  if (window.innerWidth >= 800) {
+    if (textElement) {
       textElement.textContent = "Want some action?";
     } else {
-      textElement.textContent = "All the news are here";
+      if (textElement) {
+        textElement.textContent = "All the news are here";
+      }
     }
   }
+}
+const hamburger = document.getElementById("hamburger");
+const menuOverlay = document.getElementById("menu-overlay");
+const closeBtn = document.getElementById("close");
+
+if (hamburger) {
+  hamburger.addEventListener("click", function () {
+    if (menuOverlay) menuOverlay.classList.add("active");
+  });
+}
+
+closeBtn?.addEventListener("click", function () {
+  menuOverlay?.classList.remove("active");
+});
 checkScreenSize1();
 checkScreenSize2();
 checkScreenSize3();
 
-
 window.addEventListener("resize", checkScreenSize1);
 window.addEventListener("resize", checkScreenSize2);
 window.addEventListener("resize", checkScreenSize3);
-
