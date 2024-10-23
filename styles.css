@@ -33,69 +33,66 @@ nav {
 }
 
 .ham-menu-icon {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-  }
-  
-  .ham-menu-icon span {
-    width: 30px;
-    height: 3px;
-    background-color: black;
-    margin: 4px 0;
-  }
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
 
+.ham-menu-icon span {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+}
 
 .nav-logo {
   font-weight: bold;
 }
 
 .menu-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: white;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-  }
-  
-  .menu-overlay ul {
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .menu-overlay ul li {
-    margin: 20px 0;
-  }
-  
-  .menu-overlay ul li a {
-    text-decoration: none;
-    font-size: 80px;
-    color: black;
-  }
-  
-  .menu-overlay .close {
-    font-size: 75px;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    cursor: pointer;
-  }
-  
- 
-  .menu-overlay.active {
-    transform: translateX(0);
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
 
+.menu-overlay ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-overlay ul li {
+  margin: 20px 0;
+}
+
+.menu-overlay ul li a {
+  text-decoration: none;
+  font-size: 80px;
+  color: black;
+}
+
+.menu-overlay .close {
+  font-size: 75px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.menu-overlay.active {
+  transform: translateX(0);
+}
 
 .hero-section {
   height: 100vh;
@@ -283,6 +280,28 @@ button {
 }
 
 @media (min-width: 800px) {
+  nav a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .ham-menu {
+    display: none;
+  }
+  .ham-menu-icon {
+    display: none;
+  }
+
+  .ham-menu-large {
+    display: flex;
+  }
+  .ham-menu-large ul {
+    display: flex;
+    gap: 10rem;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+  }
+}
   .cards {
     display: flex;
     flex-direction: row;
@@ -340,7 +359,6 @@ button {
     flex-wrap: wrap;
   }
 
-
   .email-section {
     display: flex;
     flex-direction: column;
@@ -370,7 +388,7 @@ button {
     font-size: 42px;
   }
 
-  .subscribe .email-section .subscribe  {
+  .subscribe .email-section .subscribe {
     justify-content: left;
     padding-bottom: 0px;
   }
@@ -381,13 +399,10 @@ button {
     padding-bottom: 0px;
     padding-right: 1rem;
   }
-  
 
   .subscribe button {
     margin-top: 3rem;
     margin-bottom: 3rem;
     font-size: 24px;
-
   }
-  
 }
