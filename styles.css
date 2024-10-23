@@ -1,269 +1,318 @@
 :root {
-    --color-tan: #E3CDB1;
+  --color-tan: #e3cdb1;
 }
 
-
 .wrapper {
-    text-align: center;
+  text-align: center;
 }
 
 nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 3rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .nav-logo {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .hero-section {
-    height: 100vh;
-    background-image: url('./img/cake.png');
-    background-size: cover;
-    background-position: left;
-    position: relative;
+  height: 100vh;
+  background-image: url("./img/cake.png");
+  background-size: cover;
+  background-position: left;
+  position: relative;
 }
 
 .content-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #000;
 }
 
 .content-overlay .subtitle {
-    font-size: 24px;
-    color: var(--color-tan);
+  font-size: 24px;
+  color: var(--color-tan);
 }
 
 .content-overlay h1 {
-    font-size: 48px;
-    font-family: 'Georgia', serif;
+  font-size: 48px;
+  font-family: "Georgia", serif;
 }
 
 .hero-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    border: 2px solid #c9a27c;
-    background-color: transparent;
-    color: #c9a27c;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 2px solid #c9a27c;
+  background-color: transparent;
+  color: #c9a27c;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .hero-button:hover {
-    background-color: #c9a27c;
-    color: white;
+  background-color: #c9a27c;
+  color: white;
 }
 
 footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 footer p {
-    padding-top: 3rem;
-    margin-bottom: 0px;
-    color: var(--color-tan);
+  margin-top: 3rem;
+  margin-bottom: 0px;
+  color: var(--color-tan);
 }
 
 footer h2 {
-    margin-top: 0px;
-    padding-bottom: 1rem;
+  margin-top: 0px;
+  padding-bottom: 1rem;
 }
 
-
 .subscribe {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
 .subscribe input[type="email"] {
-    border: none;
-    border-bottom: 2px solid #c9a27c;
-    background: none;
-    color: white;
-    padding: 10px 0;
-    font-size: 16px;
-    outline: none;
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto 20px auto;
-    display: block;
-    text-align: center;
+  border: none;
+  border-bottom: 2px solid #c9a27c;
+  background: none;
+  color: white;
+  padding: 10px 0;
+  font-size: 16px;
+  outline: none;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 20px auto;
+  display: block;
+  text-align: left;
 }
 
 .email {
-    text-align: left;
+  text-align: left;
 }
 
 .socials p {
-    color: black;
-    font-size: 18px;
+  color: black;
+  font-size: 18px;
 }
 
 .socials .socials-icons {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 button {
-    border: 2px solid #c9a27c;
-    background-color: transparent;
-    color: #c9a27c;
-    font-size: 16px;
-    padding: 10px 60px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-bottom: 3rem;
+  border: 2px solid #c9a27c;
+  background-color: transparent;
+  color: #c9a27c;
+  font-size: 16px;
+  padding: 10px 60px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 3rem;
 }
 
 .button {
-    text-align: center;
+  text-align: center;
 }
 
 .div-button {
-    text-align: center;
-    background-color: #F6F6F6;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    
+  text-align: center;
+  background-color: #f6f6f6;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .extra-cards {
-    display: none;
+  display: none;
 }
 
 .card {
-    text-align: left;
+  text-align: left;
 }
 
 .card h3 {
-    font-size: 24px
+  font-size: 24px;
 }
 
 .card-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .card-content p {
-    font-size: 22px;
-    color: var(--color-tan);
+  font-size: 22px;
+  color: var(--color-tan);
 }
 
 .card-picture img {
-    width: 100%;
-    height: auto;
-    max-width: 300px;
-    object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  object-fit: cover;
 }
 
 .book {
-    background: linear-gradient(to bottom, #E3CDB1 70%, #ffffff 30%);
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+  background: linear-gradient(to bottom, #e3cdb1 70%, #ffffff 30%);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .book-button {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
-
 .book .card {
-    text-align: center;
+  text-align: center;
 }
 
 .book h2 {
-    font-size: 32px;
+  font-size: 32px;
 }
 
 .book p {
-    font-size: 24px;
+  font-size: 24px;
 }
 
-
 .inline-bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .tan {
-    color: var(--color-tan);
+  color: var(--color-tan);
 }
 
 .heading {
-    font-size: 28px;
-    opacity: 50%;
+  font-size: 28px;
+  opacity: 50%;
 }
 
-@media(min-width: 800px) {
-    .cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        
-    }
+@media (min-width: 800px) {
+  .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .extra-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .book {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .book .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .book-card-left {
+    width: 50%;
+  }
+
+  .book-card-right {
+    width: 50%;
+  }
+
+  .book-card-right img {
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+  }
+
+  .recipe-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .latest-recipes-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .subscribe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    flex-wrap: wrap;
+  }
 
 
-    .extra-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
+  .email-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    .book {
-        padding-left: 3rem;
-        padding-right: 3rem;
-    }
+  .subscribe-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    .book .card {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+  .subscribe p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin-top: 0px;
+  }
 
-    .book-card-left {
-        width: 50%;
-    }
+  .subscribe h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-size: 42px;
+  }
 
-    .book-card-right {
-        width: 50%;
-    }
+  .subscribe .email-section .subscribe  {
+    justify-content: left;
+    padding-bottom: 0px;
+  }
 
-    .book-card-right img {
-        width: 100%;
-        height: auto;
-        max-width: 450px;
-    }
-
-    .recipe-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
+  .subscribe input[type="email"] {
+    font-size: 24px;
+    text-align: left;
+    padding-bottom: 0px;
+    padding-right: 1rem;
+  }
   
-    .latest-recipes-section {
-        display: flex;
-        flex-direction: column;
-        
-        
-    }
 
+  .subscribe button {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 24px;
+
+  }
+  
 }
