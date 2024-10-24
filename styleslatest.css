@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font-base-size: 1rem;
+    --font-family-base: 'Poppins';
+    --font-family-heading: 'Playfair-Display';
+
+}
+
+
+@font-face {
+    font-family: 'Playfair-Display';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(./fonts/PlayfairDisplay-VariableFont_wght.ttf) format(woff2);
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 350;
+    font-display: swap;
+    src: url(./fonts/Poppins-Thin.ttf) format(woff2);
+}
+
+h1,
+h2{
+    font-family: var(--font-family-heading);
+}
+
+html,
+input,
+select,
+button {
+    font-family: var(--font-family-base);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #fafafa;
+}
+
+.wrapper-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    color: black;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:inherit;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.vinstri {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20rem;
+}
+
+.subtitle {
+    color: #e3cdb1;
+}
+
+.hægri {
+    display: flex;
+    align-items: center;
+    margin-right: 20rem;
+    margin-top: 3rem;
+}
+
+
+header label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+
+.wrapper-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    justify-items: center;
+    max-width: 1200px;
+    width: 100%;
+    padding: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 100%;
+    padding: 1rem;
+}
+
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    
+}
+
+.card-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card .month-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.card .month-title p{
+    font-size: 0.9rem;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.card h2 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.card .read-more {
+    font-size: 0.8rem;
+    align-items: flex-end;
+    margin-top: 2.8rem;
+    color: #e3cdb1;
+}
+
+.button-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.lina {
+    flex: 1;
+    height: 1px;
+    background-color: red;
+    margin: 0 10px;
+}
+
+.aðal {
+    padding: 10px 20px;
+    border: 2px solid #e3cdb1;
+    background-color:#fafafa ;
+    color: #e3cdb1;
+}
+
+.Subscribe {
+    background-color: black;
+    color: white;
+     width: 100vw;
+     height: 339px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+}
+
+.Subscribe-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5rem;
+}
+
+.Subscribe div {
+    margin-right: 15px;
+}
+
+.sub-input {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.sub-input input {
+    background-color: black;
+    color: #FFFFFF;
+    border: none;
+    border-bottom: 2px solid #e3cdb1;
+    padding: 10px;
+    margin-right: 300px;
+    
+}
+
+.sub-input input::placeholder {
+    color: white;
+    opacity: 1;
+
+}
+
+.sub-input button {
+    padding: 15px 100px;
+    background-color:black ;
+    color:#e3cdb1;
+    border: 2px solid #e3cdb1;
+    cursor: pointer;
+    transition: background-color 1s ease;
+}
+
+.sub-input button:hover {
+    background-color: #e3cdb1;
+    color: black;
+}
+
+.Subscribe p {
+    color:#e3cdb1;
+}
+
+.Subscribe h2 {
+    color:#FFFFFF;
+}
+
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem;
+    padding: 5rem;
+}
+
+.socials p {
+    margin-bottom: 1rem;
+}
+
+.socials imgs {
+margin-bottom: 1rem;
+}
+
+.socials h2 {
+    margin-bottom: 1rem;
+}
+
+
+
