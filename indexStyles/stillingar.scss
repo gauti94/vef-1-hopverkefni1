@@ -1,28 +1,28 @@
 :root {
-    --color-tan: #e3cdb1;
-    --font-family-base: 'Poppins';
-    --font-family-heading: 'Playfair-Display';
+  --color-tan: #e3cdb1;
+  --font-family-base: 'Poppins';
+  --font-family-heading: 'Playfair-Display';
   
-  }
+}
 
-  @font-face {
-    font-family: 'Playfair-Display';
-    font-style: normal;
-    font-weight: 900;
-    font-display: swap;
-    src: url(./fonts/PlayfairDisplay-VariableFont_wght.ttf) format(woff2);
-  }
+@font-face {
+  font-family: Playfair-Display;
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('./fonts/PlayfairDisplay-VariableFont_wght.ttf') format(woff2);
+}
   
-  @font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 350;
-    font-display: swap;
-    src: url(./fonts/Poppins-Thin.ttf) format(woff2);
-  }
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 350;
+  font-display: swap;
+  src: url('./fonts/Poppins-Thin.ttf') format(woff2);
+}
 
-  h1,
-h2{
+h1,
+h2 {
   font-family: var(--font-family-heading);
 }
 
