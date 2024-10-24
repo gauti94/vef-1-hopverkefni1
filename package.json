@@ -114,7 +114,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "browser-sync start --server --files 'index.html, css/*.css, js/*.js'",
-    "lint": "stylelint styles.scss ./**/*.scss"
+    "lint": "stylelint styles.scss ./**/*.scss",
+    "copy:html": "cpy ./*.html ./build/",
+    "copy:css": "cpy ./*css ./build/",
+    "copy:js": "cpy ./*js ./build/",
+    "build": "concurrently npm:copy:*"
   },
   "repository": {
     "type": "git",
