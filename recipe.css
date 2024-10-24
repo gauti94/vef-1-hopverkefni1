@@ -1,5 +1,7 @@
 :root {
   --color-tan: #e3cdb1;
+  --color-grey: #86848f;
+  --color-light-grey: #bbb9c6;
 }
 
 nav {
@@ -113,6 +115,131 @@ nav {
   }
 }
 
+/*HERO-SECTION*/
+
+.hero-section {
+  height: 100vh;
+  background-image: url(./img/cake.png);
+  background-size: cover;
+  background-position: left;
+  position: relative;
+}
+
+.content-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #000;
+}
+
+.content-overlay h1 {
+  font-family: Playfair Display;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 79.98px;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.content-overlay ul {
+  display: flex;
+  gap: 3rem;
+  padding-left: 2rem;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 17px;
+  text-align: left;
+  color: var(--color-grey);
+}
+
+.content-overlay p {
+  color: var(--color-grey);
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  text-align: left;
+}
+
+.first-word {
+  color: #000;
+}
+
+.content-overlay .decoration1 {
+  list-style-image: url(./img/Level-Icon.svg);
+}
+
+.content-overlay .decoration2 {
+  list-style-image: url(./img/Servings-Icon.svg);
+}
+
+.content-overlay .decoration3 {
+  list-style-image: url(./img/Preparation-Icon.svg);
+}
+
+/*INGREDIENTS OG METHOD*/
+.ingredients-method {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 3rem;
+}
+
+/* INGREDIENTS*/
+
+.ingredients {
+  flex: 1;
+}
+
+/*METHOD*/
+
+.method {
+  flex: 2;
+}
+
+.method h2 {
+  font-family: Playfair Display;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 53.32px;
+  text-align: left;
+  color: var(--color-light-grey);
+}
+
+.method p {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  text-align: left;
+  color: var(--color-grey);
+}
+
+.ingredients h2 {
+  color: var(--color-light-grey);
+  font-family: Playfair Display;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 53.32px;
+  text-align: left;
+
+}
+
+.ingredients h3 {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 17px;
+  text-align: left;
+  color: #000;
+}
+
+.ingredients li {
+  
+}
 /*FOOTER*/
 
 footer {
