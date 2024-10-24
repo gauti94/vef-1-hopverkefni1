@@ -1,3 +1,7 @@
+:root {
+  --color-tan: #e3cdb1;
+}
+
 nav {
     display: flex;
     flex-direction: row;
@@ -14,163 +18,222 @@ nav {
     font-size: 24px;
   }
   
-  .nav-logo {
-    font-weight: bold;
+.nav-logo {
+  font-weight: bold;
+}
+
+.nav-logo span {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.ham-menu-large {
+  display: none;
+}
+
+.ham-menu-icon {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.ham-menu-icon span {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.menu-overlay ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-overlay ul li {
+  margin: 20px 0;
+}
+
+.menu-overlay ul li a {
+  text-decoration: none;
+  font-size: 80px;
+  color: black;
+}
+
+.menu-overlay .close {
+  font-size: 75px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.menu-overlay.active {
+  transform: translateX(0);
+}
+
+@media (min-width: 800px) {
+  nav a {
+    color: inherit;
+    text-decoration: none;
   }
-  
-  .nav-logo span {
-    color: white;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  }
-  
-  .ham-menu-large {
+  .ham-menu {
     display: none;
   }
-  
   .ham-menu-icon {
+    display: none;
+  }
+
+  .ham-menu-large {
     display: flex;
-    flex-direction: column;
-    cursor: pointer;
   }
-  
-  .ham-menu-icon span {
-    width: 30px;
-    height: 3px;
-    background-color: black;
-    margin: 4px 0;
-  }
-  
-  .menu-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: white;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
+  .ham-menu-large ul {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-  }
-  
-  .menu-overlay ul {
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .menu-overlay ul li {
-    margin: 20px 0;
-  }
-  
-  .menu-overlay ul li a {
+    gap: 10rem;
     text-decoration: none;
-    font-size: 80px;
+    list-style: none;
     color: black;
   }
+}
+
+/*FOOTER*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+footer p {
+  margin-top: 3rem;
+  margin-bottom: 0px;
+  color: var(--color-tan);
+}
+
+footer h2 {
+  margin-top: 0px;
+  padding-bottom: 1rem;
+}
+
+footer .subscribe {
+  background-color: black;
+  color: white;
+  unicode-bidi: isolate;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+footer .subscribe h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  font-size: 42px;
+}
+
+footer .subscribe p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  margin-top: 0px;
+}
+
+footer .subscribe-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  unicode-bidi: isolate;
   
-  .menu-overlay .close {
-    font-size: 75px;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    cursor: pointer;
-  }
-  
-  .menu-overlay.active {
-    transform: translateX(0);
-  }
-  
-  @media (min-width: 800px) {
-    nav a {
-      color: inherit;
-      text-decoration: none;
-    }
-    .ham-menu {
-      display: none;
-    }
-    .ham-menu-icon {
-      display: none;
-    }
-  
-    .ham-menu-large {
-      display: flex;
-    }
-    .ham-menu-large ul {
-      display: flex;
-      gap: 10rem;
-      text-decoration: none;
-      list-style: none;
-      color: black;
-    }
-  }
-  
-  footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  footer p {
-    margin-top: 3rem;
-    margin-bottom: 0px;
-    color: var(--color-tan);
-  }
-  
-  footer h2 {
-    margin-top: 0px;
-    padding-bottom: 1rem;
-  }
-  
-  .subscribe {
-    background-color: black;
-    color: white;
-  }
-  
-  .subscribe input[type="email"] {
-    border: none;
-    border-bottom: 2px solid #c9a27c;
-    background: none;
-    color: white;
-    padding: 10px 0;
-    font-size: 16px;
-    outline: none;
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto 20px auto;
-    display: block;
-    text-align: left;
-  }
-  
-  .email {
-    text-align: left;
-  }
-  
-  .socials p {
-    color: black;
-    font-size: 18px;
-  }
-  
-  .socials .socials-icons {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-  }
-  
-  button {
-    border: 2px solid #c9a27c;
-    background-color: transparent;
-    color: #c9a27c;
-    font-size: 16px;
-    padding: 10px 60px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-bottom: 3rem;
-  }
+}
+
+footer .email-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subscribe .email-section .subscribe {
+  justify-content: left;
+  padding-bottom: 0px;
+}
+
+footer .subscribe input[type="email"] {
+  border: none;
+  border-bottom: 2px solid #c9a27c;
+  background: none;
+  color: white;
+  padding-bottom: 0px;
+  padding-right: 1rem;
+  font-size: 24px;
+  outline: none;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 20px auto;
+  display: block;
+  text-align: left;
+  font-weight: bold;
+}
+
+.subscribe input[type="email"] {
+  font-size: 24px;
+  text-align: left;
+  padding-bottom: 0px;
+  padding-right: 1rem;
+}
+
+footer .email {
+  text-align: left;
+}
+
+footer .socials p {
+  color: black;
+  font-size: 18px;
+}
+
+footer .socials .socials-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+footer .subscribe button {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-size: 24px;
+}
+
+button {
+  border: 2px solid #c9a27c;
+  background-color: transparent;
+  color: #c9a27c;
+  font-size: 16px;
+  padding: 10px 60px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 3rem;
+}
