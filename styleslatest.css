@@ -50,7 +50,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     background-color: #fafafa;
     position: relative;
     
@@ -108,6 +108,10 @@ header {
     padding: 1rem;
 }
 
+header h1 {
+    font-size: 3rem;
+}
+
 .vinstri {
     display: flex;
     flex-direction: column;
@@ -148,6 +152,7 @@ header label {
 
 main {
     padding: 20px;
+
 }
 
 .card {
@@ -205,7 +210,10 @@ main {
     align-items: center;
     justify-content: center;
     margin: 20px 0;
-    background-color:#fafafa ;
+    background-color:#fafafa;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    padding-bottom: 1rem;
 }
 
 .lina {
@@ -222,98 +230,145 @@ main {
     border: 2px solid #e3cdb1;
     background-color:#fafafa ;
     color: #e3cdb1;
-}
-
-.Subscribe {
-    background-color: black;
-    color: white;
-     width: 100vw;
-     height: 339px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-
-}
-
-.Subscribe-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 5rem;
-}
-
-.Subscribe div {
-    margin-right: 15px;
-}
-
-.sub-input {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.sub-input input {
-    background-color: black;
-    color: #FFFFFF;
-    border: none;
-    border-bottom: 2px solid #e3cdb1;
-    padding: 10px;
-    margin-right: 300px;
-    
-}
-
-.sub-input input::placeholder {
-    color: white;
-    opacity: 1;
-
-}
-
-.sub-input button {
-    padding: 15px 100px;
-    background-color:black ;
-    color:#e3cdb1;
-    border: 2px solid #e3cdb1;
     cursor: pointer;
     transition: background-color 1s ease;
 }
 
-.sub-input button:hover {
-    background-color: #e3cdb1;
-    color: black;
+.aðal:hover {
+    background-color: black;
+    color: #e3cdb1;
 }
 
-.Subscribe p {
-    color:#e3cdb1;
-}
-
-.Subscribe h2 {
-    color:#FFFFFF;
-}
-
-
-.socials {
+footer {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 5rem;
-    padding: 5rem;
-}
+    justify-content: center;
+    text-align: center;
+  }
+  
+  footer p {
+    margin-top: 3rem;
+    margin-bottom: 0px;
+    color: var(--color-tan);
+  }
+  
+  footer h2 {
+    margin-top: 0px;
+    padding-bottom: 1rem;
+  }
+  
+  footer .subscribe {
+    background-color: black;
+    color: white;
+    unicode-bidi: isolate;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  footer .subscribe h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-size: 42px;
+  }
+  
+  footer .subscribe p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin-top: 0px;
+    color: #e3cdb1;
+  }
+  
+  footer .subscribe-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    unicode-bidi: isolate;
+    
+  }
+  
+  footer .email-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .subscribe .email-section .subscribe {
+    justify-content: left;
+    padding-bottom: 0px;
+  }
+  
+  footer .subscribe input[type="email"] {
+    border: none;
+    border-bottom: 2px solid #c9a27c;
+    background: none;
+    color: white;
+    padding-bottom: 0px;
+    padding-right: 1rem;
+    font-size: 24px;
+    outline: none;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 20px auto;
+    display: block;
+    text-align: left;
+    font-weight: bold;
+  }
 
-.socials p {
-    margin-bottom: 1rem;
-}
+  
+  .subscribe input[type="email"] {
+    font-size: 24px;
+    text-align: left;
+    padding-bottom: 0px;
+    padding-right: 1rem;
+  }
+  
+  footer .email {
+    text-align: left;
+  }
+  
+  footer .socials p {
+    color: black;
+    font-size: 18px;
+  }
+  
+  footer .socials .socials-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  footer .subscribe button {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 1s ease;
+  }
 
-
-.socials h2 {
-    margin-bottom: 1rem;
-}
-
+  footer .subscribe button:hover {
+    background-color: #e3cdb1;
+    color: black;
+  }
+  
+  footer button {
+    border: 2px solid #c9a27c;
+    background-color: transparent;
+    color: #c9a27c;
+    font-size: 16px;
+    padding: 10px 60px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 3rem;
+  }
 
 
