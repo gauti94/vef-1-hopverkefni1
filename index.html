@@ -8,9 +8,27 @@
   </head>
   <body>
     <nav>
-      <div class="nav-logo">Yum&yum</div>
-      <div class="ham-menu">
-        <img src="./img/burgerMenu.png" alt="burger menu" />
+      <div class="nav-logo">Yum<span>&</span>yum</div>
+      <div class="ham-menu-large">
+        <ul>
+          <li><a href="">Recipes</a></li>
+          <li><a href="">Videos</a></li>
+          <li><a href="">About us</a></li>
+        </ul>
+      </div>
+      <div class="ham-menu-icon" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-overlay" id="menu-overlay">
+        <span class="close" id="close">X</span>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Recipes</a></li>
+          <li><a href="">Videos</a></li>
+          <li><a href="">About us</a></li>
+        </ul>
       </div>
     </nav>
 
@@ -62,7 +80,7 @@
             </div>
           </div>
         </div>
-        <div class="extra-cards">
+        <div class="cards">
           <div class="card">
             <div class="card-picture">
               <img src="./img/cubecake.png" alt="Lax Sushi Rolls" />
@@ -159,19 +177,18 @@
 
     <footer>
       <section class="subscribe">
-        <div>
+        <div class="subscribe-row">
           <p class>All the news are here</p>
-        </div>
-        <div>
           <h2>Subscribe to our newsletter</h2>
+
         </div>
         <div class="email-section">
-          <div>
+          <div class="subscribe">
             <label for="email">Email</label>
           </div>
           <input type="email" placeholder="email@example.com" />
-          <button>Subscribe now</button>
         </div>
+        <button>Subscribe now</button>
       </section>
       <section class="socials">
         <div>
