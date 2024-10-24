@@ -262,6 +262,44 @@ nav {
   color: var(--color-tan);
 }
 
+.cards {
+  justify-content: space-evenly;
+}
+
+.card {
+  text-align: left;
+}
+  
+.card h3 {
+  font-size: 24px;
+}
+  
+.card-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.card-content a {
+  text-decoration: none;
+}
+  
+.card-content p {
+  font-size: 22px;
+  color: var(--color-tan);
+  text-decoration: none;
+
+}
+  
+.card-picture img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  object-fit: cover;
+}
+
+
+
 
 /*FOOTER*/
 
