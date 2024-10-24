@@ -270,7 +270,7 @@ nav {
 
 .cards {
   display: flex;
-  flex-direction: row;
+  flex-direction:row;
   justify-content: space-evenly;
 
 }
@@ -282,6 +282,9 @@ nav {
 .card h3 {
   font-size: 24px;
 }
+  .card-content .month-name p {
+    color: var(--color-light-grey);
+  }
   
 .card-content {
   display: flex;
@@ -289,6 +292,9 @@ nav {
   justify-content: space-around;
 }
 
+.tan-a-link {
+  color: var(--color-tan);
+}
 .card-content a {
   text-decoration: none;
 }
@@ -302,7 +308,7 @@ nav {
   
 .card-picture img {
   width: 100%;
-  height: auto;
+  height: 100%;
   max-width: 300px;
   object-fit: cover;
 }
