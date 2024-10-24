@@ -258,6 +258,10 @@ button {
   justify-content: space-around;
 }
 
+.card-content p a {
+  text-decoration: none;
+}
+
 .card-content p {
   font-size: 22px;
   color: var(--color-tan);
