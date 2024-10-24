@@ -51,9 +51,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     background-color: #fafafa;
+    position: relative;
+    
+    
 }
+
 
 .wrapper-nav {
     display: flex;
@@ -63,6 +67,8 @@ body {
     margin-bottom: 1rem;
     padding: 1rem;
 }
+
+
 
 nav {
     margin-top: 1rem;
@@ -87,7 +93,8 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color:inherit;
+    color:black;
+    font-weight: 600;
 }
 
 header {
@@ -133,6 +140,11 @@ header label {
     max-width: 1200px;
     width: 100%;
     padding: 1rem;
+    background-color: transparent;
+}
+
+main {
+    padding: 20px;
 }
 
 .card {
@@ -142,6 +154,7 @@ header label {
     align-items: flex-start;
     max-width: 100%;
     padding: 1rem;
+    border-radius: 10px;
 }
 
 
@@ -149,6 +162,7 @@ header label {
     width: 100%;
     height: auto;
     object-fit: cover;
+    display: block;
     
 }
 
@@ -156,6 +170,8 @@ header label {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    background-color: white;
+    padding: 1rem;
 }
 
 .card .month-title {
@@ -186,13 +202,16 @@ header label {
     align-items: center;
     justify-content: center;
     margin: 20px 0;
+    background-color:#fafafa ;
 }
 
 .lina {
     flex: 1;
     height: 1px;
-    background-color: red;
+    background-color: #e3cdb1;
     margin: 0 10px;
+    margin-left: 5rem;
+    margin-right: 5rem;
 }
 
 .aðal {
@@ -288,9 +307,6 @@ header label {
     margin-bottom: 1rem;
 }
 
-.socials imgs {
-margin-bottom: 1rem;
-}
 
 .socials h2 {
     margin-bottom: 1rem;
