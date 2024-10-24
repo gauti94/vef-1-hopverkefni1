@@ -206,6 +206,8 @@ main {
     justify-content: center;
     margin: 20px 0;
     background-color:#fafafa ;
+    margin: 0;
+    padding: 20px 10px;
 }
 
 .lina {
