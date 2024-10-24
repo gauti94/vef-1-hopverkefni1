@@ -113,7 +113,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "browser-sync start --server --files 'index.html, css/*.css, js/*.js'"
+    "start": "browser-sync start --server --files 'index.html, css/*.css, js/*.js'",
+    "lint": "stylelint styles.scss ./**/*.scss"
   },
   "repository": {
     "type": "git",
