@@ -1,0 +1,29 @@
+.extra-cards {
+    display: none;
+  }
+  
+  .card {
+    text-align: left;
+  }
+  
+  .card h3 {
+    font-size: 24px;
+  }
+  
+  .card-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .card-content p {
+    font-size: 22px;
+    color: var(--color-tan);
+  }
+  
+  .card-picture img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    object-fit: cover;
+  }

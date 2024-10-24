@@ -1,0 +1,42 @@
+.hero-section {
+    height: 100vh;
+    background-image: url("./img/cake.png");
+    background-size: cover;
+    background-position: left;
+    position: relative;
+  }
+  
+  .content-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #000;
+  }
+  
+  .content-overlay .subtitle {
+    font-size: 24px;
+    color: var(--color-tan);
+  }
+  
+  .content-overlay h1 {
+    font-size: 48px;
+    font-family: "Georgia", serif;
+  }
+  
+  .hero-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 2px solid #c9a27c;
+    background-color: transparent;
+    color: #c9a27c;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-button:hover {
+    background-color: #c9a27c;
+    color: white;
+  }

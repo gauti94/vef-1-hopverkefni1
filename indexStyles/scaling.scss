@@ -1,0 +1,128 @@
+@media (min-width: 800px) {
+    nav a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .ham-menu {
+      display: none;
+    }
+    .ham-menu-icon {
+      display: none;
+    }
+  
+    .ham-menu-large {
+      display: flex;
+    }
+    .ham-menu-large ul {
+      display: flex;
+      gap: 10rem;
+      text-decoration: none;
+      list-style: none;
+      color: black;
+    }
+  }
+    .cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+  
+    .extra-cards {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+  
+    .book {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  
+    .book .card {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .book-card-left {
+      width: 50%;
+    }
+  
+    .book-card-right {
+      width: 50%;
+    }
+  
+    .book-card-right img {
+      width: 100%;
+      height: auto;
+      max-width: 450px;
+    }
+  
+    .recipe-cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+  
+    .latest-recipes-section {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .subscribe {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+  
+    .email-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .subscribe-row {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .subscribe p {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+      margin-top: 0px;
+    }
+  
+    .subscribe h2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+      font-size: 42px;
+    }
+  
+    .subscribe .email-section .subscribe {
+      justify-content: left;
+      padding-bottom: 0px;
+    }
+  
+    .subscribe input[type="email"] {
+      font-size: 24px;
+      text-align: left;
+      padding-bottom: 0px;
+      padding-right: 1rem;
+    }
+  
+    .subscribe button {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      font-size: 24px;
+    }

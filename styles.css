@@ -1,31 +1,25 @@
-
-
 :root {
   --color-tan: #e3cdb1;
-  --font-family-base: 'Poppins';
-  --font-family-heading: 'Playfair-Display';
-
+  --font-family-base: "Poppins";
+  --font-family-heading: "Playfair-Display";
 }
 
-
 @font-face {
-  font-family: 'Playfair-Display';
+  font-family: "Playfair-Display";
   font-style: normal;
   font-weight: 900;
   font-display: swap;
   src: url(./fonts/PlayfairDisplay-VariableFont_wght.ttf) format(woff2);
 }
-
 @font-face {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 350;
   font-display: swap;
   src: url(./fonts/Poppins-Thin.ttf) format(woff2);
 }
-
 h1,
-h2{
+h2 {
   font-family: var(--font-family-heading);
 }
 
@@ -58,8 +52,7 @@ nav {
 
 .nav-logo span {
   color: white;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .ham-menu-large {
@@ -195,7 +188,7 @@ footer h2 {
   justify-content: left;
 }
 
-.subscribe input[type="email"] {
+.subscribe input[type=email] {
   border: none;
   border-bottom: 2px solid #c9a27c;
   background: none;
@@ -326,7 +319,6 @@ button {
   .ham-menu-icon {
     display: none;
   }
-
   .ham-menu-large {
     display: flex;
   }
@@ -338,109 +330,110 @@ button {
     color: black;
   }
 }
-  .cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  }
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 
-  .extra-cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
+.extra-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 
-  .book {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
+.book {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
 
-  .book .card {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+.book .card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
-  .book-card-left {
-    width: 50%;
-  }
+.book-card-left {
+  width: 50%;
+}
 
-  .book-card-right {
-    width: 50%;
-  }
+.book-card-right {
+  width: 50%;
+}
 
-  .book-card-right img {
-    width: 100%;
-    height: auto;
-    max-width: 450px;
-  }
+.book-card-right img {
+  width: 100%;
+  height: auto;
+  max-width: 450px;
+}
 
-  .recipe-cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  }
+.recipe-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 
-  .latest-recipes-section {
-    display: flex;
-    flex-direction: column;
-  }
+.latest-recipes-section {
+  display: flex;
+  flex-direction: column;
+}
 
-  .subscribe {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    flex-wrap: wrap;
-  }
+.subscribe {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  flex-wrap: wrap;
+}
 
-  .email-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+.email-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  .subscribe-row {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+.subscribe-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  .subscribe p {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    margin-top: 0px;
-  }
+.subscribe p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  margin-top: 0px;
+}
 
-  .subscribe h2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-    font-size: 42px;
-  }
+.subscribe h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  font-size: 42px;
+}
 
-  .subscribe .email-section .subscribe {
-    justify-content: left;
-    padding-bottom: 0px;
-  }
+.subscribe .email-section .subscribe {
+  justify-content: left;
+  padding-bottom: 0px;
+}
 
-  .subscribe input[type="email"] {
-    font-size: 24px;
-    text-align: left;
-    padding-bottom: 0px;
-    padding-right: 1rem;
-  }
+.subscribe input[type=email] {
+  font-size: 24px;
+  text-align: left;
+  padding-bottom: 0px;
+  padding-right: 1rem;
+}
 
-  .subscribe button {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    font-size: 24px;
-  }
+.subscribe button {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-size: 24px;
+}
 
+/*# sourceMappingURL=styles.css.map */
