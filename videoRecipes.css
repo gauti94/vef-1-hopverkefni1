@@ -161,6 +161,152 @@ nav {
     right: 5rem;
     flex-wrap: wrap;
   }
+
+  /*INGREDIENTS OG METHOD*/
+.ingredients-method {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 3rem;
+}
+
+/* INGREDIENTS*/
+
+.ingredients {
+  flex: 1;
+}
+
+/*METHOD*/
+
+.method {
+  flex: 2;
+}
+
+.method h2 {
+  font-family: Playfair Display;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 53.32px;
+  text-align: left;
+  color: var(--color-light-grey);
+}
+
+.method p {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  text-align: left;
+  color: var(--color-grey);
+}
+
+.ingredients h2 {
+  color: var(--color-light-grey);
+  font-family: Playfair Display;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 53.32px;
+  text-align: left;
+
+}
+
+.ingredients h3 {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 17px;
+  text-align: left;
+  color: #000;
+}
+
+.ingredients ul {
+  list-style: none;
+  padding-inline-start: 0px;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 17px;
+  text-align: left;
+  color: var(--color-light-grey);
+  margin-bottom: 3rem;
+}
+
+.ingredients ul li {
+  margin-top: 1rem;
+}
+
+.ingredients ul li strong {
+  font-family: Playfair Display;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: left;
+  color: var(--color-tan);
+}
+
+.cards {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+
+}
+
+.card {
+  text-align: left;
+}
+  
+.card h3 {
+  font-size: 24px;
+}
+  .card-content .month-name p {
+    color: var(--color-light-grey);
+  }
+  
+.card-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.tan-a-link {
+  color: var(--color-tan);
+}
+.card-content a {
+  text-decoration: none;
+}
+  
+.card-content p {
+  font-size: 22px;
+  color: var(--color-tan);
+  text-decoration: none;
+
+}
+  
+.card-picture img {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  object-fit: cover;
+}
+
+/*LATEST RECIPES*/
+
+.tan-p {
+  color: var(--color-tan);
+  margin-bottom: 0rem;
+}
+
+.Group-10 h2 {
+  font-family: Playfair Display;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 53.32px;
+  text-align: left;
+  margin-top: 0.3rem;
+}
+
+.Group-10 h2 .greystart {
+  color: var(--color-light-grey);
+}
   
  
   footer {

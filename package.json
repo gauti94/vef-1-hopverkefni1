@@ -118,7 +118,8 @@
     "copy:html": "cpy ./*.html ./build/",
     "copy:css": "cpy ./*css ./build/",
     "copy:js": "cpy ./*js ./build/",
-    "build": "concurrently npm:copy:*"
+    "build": "concurrently npm:copy:*",
+    "sass": "sass styles.scss styles.css"
   },
   "repository": {
     "type": "git",
