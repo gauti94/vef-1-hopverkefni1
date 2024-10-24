@@ -135,9 +135,7 @@ nav {
     list-style-image: url('./img/Preparation-Icon.svg')
   }
 
-  .content-overlay  {
-    list-style-image: ;
-  }
+ 
 
   .content-overlay p {
     text-align: left;
@@ -154,12 +152,17 @@ nav {
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
-  
-  .hero-button:hover {
-    background-color: #c9a27c;
-    color: white;
+
+  .play-button {
+    display: flex;
+    justify-content: right;
+    position: relative;
+    top: 11rem;
+    right: 5rem;
+    flex-wrap: wrap;
   }
   
+ 
   footer {
     display: flex;
     flex-direction: column;
@@ -361,3 +364,4 @@ nav {
         margin-bottom: 3rem;
         font-size: 24px;
       }
+    }
