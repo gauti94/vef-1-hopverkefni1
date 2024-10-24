@@ -178,19 +178,62 @@ nav {
     padding-bottom: 1rem;
   }
   
-  .subscribe {
+  footer .subscribe {
     background-color: black;
     color: white;
-    justify-content: left;
+    unicode-bidi: isolate;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    flex-wrap: wrap;
   }
   
-  .subscribe input[type="email"] {
+  footer .subscribe h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-size: 42px;
+  }
+  
+  footer .subscribe p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin-top: 0px;
+  }
+  
+  footer .subscribe-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    unicode-bidi: isolate;
+    
+  }
+  
+  footer .email-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .subscribe .email-section .subscribe {
+    justify-content: left;
+    padding-bottom: 0px;
+  }
+  
+  footer .subscribe input[type="email"] {
     border: none;
     border-bottom: 2px solid #c9a27c;
     background: none;
     color: white;
-    padding: 10px 0;
-    font-size: 16px;
+    padding-bottom: 0px;
+    padding-right: 1rem;
+    font-size: 24px;
     outline: none;
     width: 100%;
     max-width: 300px;
@@ -200,21 +243,33 @@ nav {
     font-weight: bold;
   }
   
-  .email {
+  .subscribe input[type="email"] {
+    font-size: 24px;
+    text-align: left;
+    padding-bottom: 0px;
+    padding-right: 1rem;
+  }
+  
+  footer .email {
     text-align: left;
   }
   
-  .socials p {
+  footer .socials p {
     color: black;
     font-size: 18px;
   }
   
-  .socials .socials-icons {
+  footer .socials .socials-icons {
     display: flex;
     justify-content: center;
     gap: 2rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
+  }
+  footer .subscribe button {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 24px;
   }
   
   button {
@@ -226,17 +281,6 @@ nav {
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-bottom: 3rem;
-  }
-  
-  .button {
-    text-align: center;
-  }
-  
-  .div-button {
-    text-align: center;
-    background-color: #f6f6f6;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
   }
 
   @media (min-width: 800px) {
