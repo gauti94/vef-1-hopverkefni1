@@ -68,15 +68,21 @@ nav {
     margin-top: 1rem;
 }
 
+.nav-logo {
+    margin-left: 20rem;
+}
+
 nav ul {
     list-style: none;
     display: flex;
     gap: 1rem;
     color: black;
+    margin-right: 21rem;
 }
 
 nav ul li {
     display: inline;
+    
 }
 
 nav ul li a {
@@ -114,6 +120,7 @@ header label {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    font-size: 0.8rem;
 }
 
 
